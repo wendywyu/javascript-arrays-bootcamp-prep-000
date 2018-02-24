@@ -6,13 +6,12 @@ function addElementToBeginningOfArray() {
   return addElementToBeginningOfArray2
 }
 
-function destructivelyAddElementToBeginningOfArray() {
-  var destructivelyAddElementToBeginningOfArray = [1]
+function destructivelyAddElementToBeginningOfArray(array, element) {
   destructivelyAddElementToBeginningOfArray.unshift('foo')
   return destructivelyAddElementToBeginningOfArray
 }
 
-function addElementToEndOfArray() {
+function addElementToEndOfArray(array, element) {
   const addElementToEndOfArray= [1]
   const addElementToEndOfArray2 = [...addElementToEndOfArray, 'foo']
   return addElementToEndOfArray2
@@ -31,7 +30,7 @@ function accessElementInArray () {
 
 function destructivelyRemoveElementFromBeginningOfArray () {
   var destructivelyRemoveElementFromBeginningOfArray = [1,2,3];
-  destructivelyRemoveElementFromBeginningOfArray.shift();
+  destructivelyRemoveElementFromBeginningOfArray.shift()
   return destructivelyRemoveElementFromBeginningOfArray
 }
 
